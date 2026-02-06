@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Visiting Card | Professional Profile</title>
+    <meta name="description" content="Professional digital visiting card - Connect with me for business opportunities">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="background-animation">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <!-- Main Card Container -->
+    <div class="card-container">
+        <div class="visiting-card">
+            <!-- Card Front -->
+            <div class="card-front">
+                <!-- Profile Section -->
+                <div class="profile-section">
+                    <div class="profile-image-wrapper">
+                        <div class="profile-image">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="status-indicator"></div>
+                    </div>
+                    <h1 class="name">Aadhira</h1>
+                    <p class="title">Professional Title</p>
+                    <p class="company">Company Name</p>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-section">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <span class="label">Phone</span>
+                            <a href="tel:+1234567890">+1 234 567 890</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <span class="label">Email</span>
+                            <a href="mailto:aadhira2@gmail.com">aadhira2@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="contact-details">
+                            <span class="label">Website</span>
+                            <a href="https://yourwebsite.com" target="_blank">www.yourwebsite.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-location-dot"></i>
+                        </div>
+                        <div class="contact-details">
+                            <span class="label">Location</span>
+                            <span>Your City, Country</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Links -->
+                <div class="social-section">
+                    <a href="#" class="social-link linkedin" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link twitter" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link github" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link instagram" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link whatsapp" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="action-buttons">
+                    <button class="btn btn-primary" id="saveContactBtn">
+                        <i class="fas fa-download"></i>
+                        Save Contact
+                    </button>
+                    <button class="btn btn-secondary" id="shareCardBtn">
+                        <i class="fas fa-share-nodes"></i>
+                        Share Card
+                    </button>
+                </div>
+
+                <!-- QR Code Section -->
+                <div class="qr-section" id="qrSection">
+                    <div class="qr-toggle" id="qrToggle">
+                        <i class="fas fa-qrcode"></i>
+                        <span>Scan QR Code</span>
+                    </div>
+                    <div class="qr-display" id="qrDisplay">
+                        <div class="qr-code" id="qrCode">
+                            <!-- QR code will be generated here -->
+                        </div>
+                        <p class="qr-hint">Scan to open this card</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage">Action completed!</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
